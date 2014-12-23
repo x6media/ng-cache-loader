@@ -9,7 +9,7 @@ var urlParser = require('./lib/urlParser.js');
 var getTemplateId = require('./lib/templateId.js');
 
 var stub = 'var v$i=$val;\n' +
-    'angular.module(["ng"])' +
+    'require(\'angular\').module(["ng"])' +
     '.run(["$templateCache",function(c){' +
     'c.put("$key", v$i)' +
     '}]);';
